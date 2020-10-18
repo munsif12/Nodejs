@@ -1,0 +1,29 @@
+ERROR ;-
+fatal: 'origin' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+
+
+SOLUTION :-
+$ git remote -v => to see remote repository
+$ git remote add origin /Volumes/500GB/git-repository/myproject.git => to add remote reposot 
+
+
+2nd : to delete commis 
+use 
+[ git reset --hard head~2 (latest 2 commits will b deleted) ]
+to restore latest commits
+use 
+[ git reflog (this will show all the commits including deleted commits) ]
+
+then use
+[
+git reset --hard ID
+git push -f origin master
+]
+
+3 : errror =>hint: Updates were rejected because the remote contains 
+work that you do ...... 
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+SOLUTION :-
+[ 1 :- git push -f origin master  ]

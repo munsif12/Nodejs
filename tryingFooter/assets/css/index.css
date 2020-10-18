@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+    transition: 1s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #fff;
+
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(220deg, rgb(164, 164, 225), rgb(119, 230, 255));
+    padding: 10px;
+}
+
+.navBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 55px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    padding-left: 10px;
+}
+
+.btnStyle {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(312deg, rgb(104, 222, 245), rgb(148, 148, 172));
+    color: white;
+    font-size: 15px;
+}
+
+img {
+    height: 85vh;
+    width: 100vw;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.msg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: linear-gradient(rgba(211, 247, 247, 0), rgb(255, 209, 139));
+    transform: translate(100%);
+    top: -1%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease-in-out;
+    z-index: 97;
+    /* animation: munsif 2s linear; */
+    overflow: hidden;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+.image:hover .msg {
+    display: grid;
+    transform: translate(0%);
+}
+
+.btn2:hover {
+    box-shadow: 0 6px 5px rgb(148, 148, 172);
+}
+
+@keyframes munsif {
+    0% {
+        transform: translate(100%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    h5,
+    span {
+        font-size: 15px;
+    }
+
+    .navBtn {
+        margin-right: 12px;
+    }
+
+    .logo>p {
+        font-size: 15px;
+    }
+
+    .btnStyle {
+        padding: 3px 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    h5,
+    span {
+        font-size: 12px;
+    }
+
+    .navBtn {
+        margin-right: 8px;
+    }
+
+    .logo>p {
+        font-size: 12px;
+    }
+
+    .btnStyle {
+        padding: 2px 8px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    h5,
+    span {
+        font-size: 10px;
+    }
+
+    .navBtn {
+        margin-right: 6px;
+    }
+
+    .logo>p {
+        font-size: 10px;
+    }
+
+    .btnStyle {
+        padding: 1px 6px;
+        font-size: 10px;
+    }
+}
+
+.footer {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(220deg, rgb(164, 164, 225), rgb(119, 230, 255));
+    margin-top: auto;
+}
