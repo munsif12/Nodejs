@@ -12,7 +12,8 @@ console.log(addMod.name);
 console.log(addMod.add(5, 6));
 console.log('');
 //if you dont want to write obj.name etc so use object destructuring from ES6
-//object ka ander waly name same hony chaheya joka return krrha uske trah
+//object ka ander waly name same hony chaheya joka return krrha uske 
+//object property name must be same
 const {
     add,
     name,
