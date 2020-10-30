@@ -33,13 +33,13 @@ server.on("request", (req, res) => {
     //create a readablestream
     // jandle streamEvents --> DataCue,end,error
     const readStream = fs.createReadStream('dummyText.txt');
-    readStream.on("data", (recievingChunkData) => {
+    readStream.on("data", (recievingChunkData) => {//data=> untill data is comming 
         res.write(recievingChunkData);
     });
-    readStream.on("end", () => {
+    readStream.on("end", () => {//end=> when data is no more
         res.end();
     });
-    readStream.on("error", (err) => {
+    readStream.on("error", (err) => { //error=>if there is any error
         console.log(err);
         res.write("file not found")
     });
