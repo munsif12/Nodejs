@@ -5,7 +5,7 @@ const msg = "i am munsif am i am encrypting my msg using cipher";
 const Encryption = crypto.createCipher("aes192", eKeyUser1).update(msg, "uth-8", "hex");
 console.log(`Encrypted msg => ${Encryption}`);
 
-//keys for both user have to be same
+//both keys(sender,receiver) have to be same.
 
 //Decryption 
 const dKeyUser2 = "mun124";
