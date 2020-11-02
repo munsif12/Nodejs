@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
     // console.log(req.url);
     if (req.url == '/') { /*age koi request arhe h url pa with page name to redirect krdo uspage pa else 404 */
 
-        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.writeHead(200, { 'Content-Type': 'text/html' });//to set the header page.
         //res.write(req.url);//kis page ke request hui h
         res.write('requested page : ' + req.url + ' ' + '   Method :' + req.method);
         res.end('<h1>welcome to the home page</h1>');
